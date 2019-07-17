@@ -4,7 +4,7 @@ import constants from '../../constants';
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		justifyContent: 'flex-end',
+		justifyContent: 'space-between',
 		alignItems: 'center',
 		backgroundColor: constants.Colors.white,
 	},
@@ -82,6 +82,17 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 		alignItems: 'center',
 	},
+	previewContainer: {
+		flex: 1,
+		justifyContent: 'center',
+		alignItems: 'center',
+	},
+	preview: {
+		width: 150,
+		height: 150,
+		borderRadius: 75,
+		backgroundColor: constants.Colors.black,
+	}
 })
 
 export default styles

@@ -7,6 +7,7 @@ import {
   Container,
   MsgInput,
   RecordButton,
+  Preview,
 } from '../components/Home'
 
 export class HomeScreen extends React.Component {
@@ -15,7 +16,7 @@ export class HomeScreen extends React.Component {
 
     this.state={
       isRecording: false,
-      currentTime: '00.00',
+      currentTime: 0,
     }
   }
 
@@ -38,7 +39,7 @@ export class HomeScreen extends React.Component {
   initState = () => {
     this.setState({
       isRecording: false,
-      currentTime: '00.00',
+      currentTime: 0,
     })
   }
 
@@ -54,6 +55,9 @@ export class HomeScreen extends React.Component {
 
     return (
       <Container>
+        <Preview
+          recordingTime={currentTime}
+        />
         <View style={!isRecording ? style.row : {...style.row, borderTopWidth: 1}}>
           <MsgInput
             onCancelRecording={() => {}}
