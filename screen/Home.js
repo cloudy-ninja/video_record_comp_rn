@@ -2,6 +2,10 @@ import React from "react";
 import {
   View,
 } from 'react-native'
+import {
+  style,
+  Container,
+} from '../components/Home'
 
 export class HomeScreen extends React.Component {
   constructor(props) {
@@ -10,8 +14,10 @@ export class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View>
-      </View>
+      <Container>
+        <View>
+        </View>
+      </Container>
     );
   }
 }
