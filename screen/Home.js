@@ -54,7 +54,7 @@ export class HomeScreen extends React.Component {
 
     return (
       <Container>
-        <View style={style.row}>
+        <View style={!isRecording ? style.row : {...style.row, borderTopWidth: 1}}>
           <MsgInput
             onCancelRecording={() => {}}
             isRecording={isRecording}

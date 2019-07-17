@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
 		width: 20,
 		height: 20,
 		borderRadius: 10,
-		backgroundColor: constants.Colors.red,
-		marginRight: 3,
+		backgroundColor: constants.Colors.pink,
+		marginRight: 9,
 	},
 	cancelContainer: {
 		height: '100%',
