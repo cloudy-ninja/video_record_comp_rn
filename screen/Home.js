@@ -15,7 +15,7 @@ export class HomeScreen extends React.Component {
   render() {
     return (
       <Container>
-        <View>
+        <View style={style.row}>
         </View>
       </Container>
     );
