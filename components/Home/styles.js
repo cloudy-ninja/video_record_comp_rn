@@ -5,8 +5,9 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		justifyContent: 'space-between',
-		alignItems: 'center',
-		backgroundColor: constants.Colors.white,
+    display: 'flex',
+    flexDirection: 'column',
+    backgroundColor: constants.Colors.white,
 	},
 	row: {
 		padding: 10,
@@ -83,7 +84,10 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 	},
 	previewContainer: {
-		flex: 1,
+		top: 0,
+		left: 0,
+		right: 0,
+		bottom: 0,
 		justifyContent: 'center',
 		alignItems: 'center',
 	},
@@ -92,7 +96,11 @@ const styles = StyleSheet.create({
 		height: 150,
 		borderRadius: 75,
 		backgroundColor: constants.Colors.black,
-	}
+	},
+	previewCamera: {
+		flex: 1,
+		alignItems: 'center',
+  }
 })
 
 export default styles
