@@ -84,6 +84,7 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 	},
 	previewContainer: {
+		position: 'absolute',
 		top: 0,
 		left: 0,
 		right: 0,
